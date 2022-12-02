@@ -3,10 +3,20 @@
 }
 
 body {
+ 
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows:400px 400px ;
+  grid-template-areas: 
+  "banner wraper"
+  "about-me work";
 }
 
 h1,
@@ -20,4 +30,25 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.hero-banner{
+  grid-area: banner;
+}
+
+.page-wrapper{
+  grid-area: wraper;
+}
+
+#about{
+  grid-area: about-me;
+}
+
+#work{
+  grid-area: work;
+}
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
 }
