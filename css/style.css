@@ -9,15 +9,20 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+}
 
 .container{
+  background-color: aqua;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows:400px 400px ;
-  grid-template-areas: 
-  "banner wraper"
-  "about-me work";
-}
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px ;
+  /*grid-template-areas: 
+  "banner";*/
+}                                                                   
 
 h1,
 h2,
@@ -46,9 +51,4 @@ p {
 
 #work{
   grid-area: work;
-}
-.flexContainer{
-  display: flex;
-  flex-direction: row;
-  background-color: blue;
 }
