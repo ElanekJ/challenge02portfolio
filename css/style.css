@@ -9,20 +9,35 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
+/*
 .flexContainer{
   display: flex;
   flex-direction: row;
   background-color: blue;
 }
-
+*/
 .container{
   background-color: aqua;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 200px ;
-  /*grid-template-areas: 
-  "banner";*/
-}                                                                   
+  grid-template-columns: 1fr ;
+  grid-template-rows: 100px 200px;
+  grid-template-areas: 
+  "header"
+  "banner";
+  
+}  
+
+.page-wrapper{
+  display: grid;
+  background-color: crimson;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: 
+  "about-me "
+  "work"
+  "contact";
+}
 
 h1,
 h2,
@@ -37,8 +52,14 @@ p {
   margin: 0;
 }
 
+.header
+{
+  grid-area: header;
+}
+
 .hero-banner{
   grid-area: banner;
+  background-color: aquamarine;
 }
 
 .page-wrapper{
@@ -51,4 +72,8 @@ p {
 
 #work{
   grid-area: work;
+}
+
+#contact{
+  grid-area: contact;
 }
