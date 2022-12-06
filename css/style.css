@@ -18,6 +18,8 @@ body {
 }
 */
 .container{
+ 
+  
   background-color: aqua;
   display: grid;
   grid-template-columns: 1fr ;
@@ -54,7 +56,13 @@ p {
 
 .header
 {
+  background-color: blueviolet;
+  margin-block: 20px;
   grid-area: header;
+  
+}
+.header img{
+  display: block;
 }
 
 .hero-banner{
