@@ -32,7 +32,7 @@ body {
 
 .page-wrapper{
   display: grid;
-  background-color: crimson;
+  background-color: rgb(255, 255, 255);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 300px;
   grid-template-areas: 
@@ -54,20 +54,39 @@ p {
   margin: 0;
 }
 
-.header
-{
-  background-color: blueviolet;
-  margin-block: 20px;
-  grid-area: header;
+header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #8a481d;
+  color: #ffffff;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
   
 }
-.header img{
-  display: block;
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 25px;
 }
 
 .hero-banner{
-  grid-area: banner;
-  background-color: aquamarine;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/02-hero-bg.jpg);
 }
 
 .page-wrapper{
