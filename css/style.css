@@ -33,12 +33,12 @@ body {
 .page-wrapper{
   display: grid;
   background-color: rgb(255, 255, 255);
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
   grid-template-areas: 
-  "about-me "
-  "work"
-  "contact";
+  "about-me myself myself"
+  "work my_work my_work"
+  "contact my_contact my_contact";
 }
 
 h1,
@@ -89,10 +89,6 @@ a {
   background-image: url(../images/02-hero-bg.jpg);
 }
 
-.page-wrapper{
-  grid-area: wraper;
-}
-
 #about{
   grid-area: about-me;
 }
@@ -104,3 +100,24 @@ a {
 #contact{
   grid-area: contact;
 }
+#about, #work, #contact{
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  padding-right: 20px;  
+  border-right-width: 10px;
+  border-right-color: black;
+
+}
+.about-myself{
+  grid-area: myself;
+}
+
+.my-work{
+  grid-area: my_work;
+}
+
+.my-contact{
+  grid-area: my_contact;
+}
+
